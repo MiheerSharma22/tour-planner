@@ -13,7 +13,7 @@ function App() {
   }
 
   function refreshHandler() {
-    window.location.reload();
+    setTours(data);
   }
 
   if(tours.length === 0) {
