@@ -5,18 +5,15 @@ function Card( {id, price, name, info, image , removeTour} ) {
     
     const tourPrice = `₹  ${price}`;
     const tourPlace = name;
-    const [tourInfo , setTourInfo] = useState(`${info.substr(0,200)}... `);
+ 
 
     const [readMore , setreadMore] = useState(false);
 
+    const tourInfo  = readMore ? info : `${info.substr(0,200)}... `;
+    
+
     function readmoreHandler() {
         setreadMore(!readMore);
-        if(!readMore) {
-            setTourInfo(info);
-        }
-        else {
-            setTourInfo( `${info.substr(0,200)}... ` );
-        }
     }
 
 
