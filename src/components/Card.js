@@ -19,7 +19,7 @@ function Card( {id, price, name, info, image , removeTour} ) {
 
     return(
         <div className="card w-[75%] md:w-[350px] lg:w-[400px] mb-[2rem] pt-[1rem] pb-[1rem] rounded-xl flex flex-col items-center h-fit">
-            <img src={image} className="w-[95%] md:w-[380px] aspect-[1/1] object-cover mx-auto"></img>
+            <img src={image} className="w-[95%] md:w-[380px] aspect-[1/1] object-cover mx-auto" alt='destination'></img>
             
             <div className='tour-info my-[20px]  mx-[15px]'>
                 <p className=' text-green-500 font-bold text-[1.35rem] tracking-wide'>
